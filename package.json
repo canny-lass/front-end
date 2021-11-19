@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "craco start && postcss src/css/app.css -o public/app.css",
-    "build": "CI=false && craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
   },
