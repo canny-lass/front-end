@@ -11,7 +11,7 @@ export function Header(props: IHeaderProps) {
   return (
     <div className="bg-primary-900 flex justify-center items-center">
       <div className="text-center p-20 w-full">
-        <H2 className="text-white mb-8">Welcome to nanny house</H2>
+        <H2 className="text-white mb-8">Choose a category</H2>
         <Paragraph className="text-white mb-8">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </Paragraph>

@@ -15,7 +15,7 @@ export function Intro(props: IIntroProps) {
       <Section>
         <div className="grid gap-x-24 grid-cols-2">
           <div className="py-10">
-            <H4 className="mb-4">Get yourself a professional cleaner.</H4>
+            <H4 className="mb-4">Help your loved ones grow their loved ones.</H4>
             <Paragraph>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
               voluptate hic quos autem minus impedit aliquam, laudantium quaerat
@@ -29,7 +29,9 @@ export function Intro(props: IIntroProps) {
               magnam accusantium officia.
             </Paragraph>
             <div className="grid gap-x-8 grid-cols-2">
-              <ButtonDefault>Sign Up</ButtonDefault>
+            <Link to={ROUTES.UserRegistration}>
+                <ButtonDefault className="w-full">Sign Up</ButtonDefault>
+              </Link>
               <ButtonDefault>Log In</ButtonDefault>
             </div>
           </div>
@@ -38,34 +40,6 @@ export function Intro(props: IIntroProps) {
           </div>
         </div>
       </Section>
-      <Section className="pt-0">
-        <div className="grid gap-x-24 grid-cols-2">
-          <div>
-            <div className="bg-gray-500 rounded-sm h-full order-1"></div>
-          </div>
-          <div className="py-10">
-            <H4 className="mb-4">Get yourself a professional cleaner.</H4>
-            <Paragraph>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              voluptate hic quos autem minus impedit aliquam, laudantium quaerat
-              cum eligendi doloribus nihil, eum, sit possimus suscipit. Suscipit
-              magnam accusantium officia.
-            </Paragraph>
-            <Paragraph className="mb-10">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-              voluptate hic quos autem minus impedit aliquam, laudantium quaerat
-              cum eligendi doloribus nihil, eum, sit possimus suscipit. Suscipit
-              magnam accusantium officia.
-            </Paragraph>
-            <div className="grid gap-x-8 grid-cols-2">
-              <Link to={ROUTES.UserRegistration}>
-                <ButtonDefault className="w-full">Sign Up</ButtonDefault>
-              </Link>
-              <ButtonDefault>Log In</ButtonDefault>
-            </div>
-          </div>
-        </div>
-      </Section>
-    </div>
+ </div>
   );
 }
