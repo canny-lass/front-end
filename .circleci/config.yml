@@ -40,7 +40,10 @@ jobs:
           destination: tr1
       - store_test_results:
           path: test-reports/
+          
   deploy:
+    orbs:
+      heroku: circleci/heroku@1.2.6
     steps:
       - checkout
       - run:
